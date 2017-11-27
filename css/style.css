@@ -1,0 +1,209 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: .14rem;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "楷体";
+  text-size-adjust: 100%; }
+
+ul, li {
+  list-style: none; }
+
+html {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  font-size: 625%; }
+
+img, div, body, html, ul, li, a {
+  -webkit-touch-callout: none; }
+
+input, button {
+  outline: 0; }
+
+button {
+  cursor: pointer; }
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #ccc; }
+
+input {
+  -webkit-appearance: none; }
+
+html, body, .wrap {
+  height: 100%;
+  width: 100%; }
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #F0EFED; }
+
+header {
+  height: 0.5rem;
+  width: 100%;
+  background: #06C1AE;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 .12rem; }
+  header a {
+    color: #fff;
+    font-size: .18rem; }
+    header a:nth-child(1) i.icon {
+      font-size: .14rem; }
+    header a:nth-child(2) {
+      flex: 1;
+      margin: 0 .12rem;
+      position: relative; }
+      header a:nth-child(2) input {
+        height: 0.32rem;
+        width: 100%;
+        border: none;
+        border-radius: .02rem;
+        padding-left: .27rem;
+        background: #05A494;
+        padding-left: .2rem; }
+        header a:nth-child(2) input::-webkit-input-placeholder {
+          color: #54D0C2; }
+      header a:nth-child(2) i.icon {
+        position: absolute;
+        top: .06rem;
+        left: .03rem;
+        color: #fff;
+        font-size: .16rem; }
+    header a:nth-child(3) {
+      flex-basis: .4rem;
+      text-align: center;
+      font-size: .16rem; }
+      header a:nth-child(3) i.icon {
+        display: block;
+        font-size: .2rem; }
+
+section {
+  flex: 1;
+  overflow-y: scroll; }
+
+.banner {
+  width: 100%; }
+  .banner img {
+    width: 100%;
+    height: auto; }
+
+.text {
+  width: 100%;
+  overflow: hidden;
+  position: relative; }
+  .text img {
+    width: 100%;
+    height: auto; }
+  .text .swiper-pagination-bullet-active {
+    background: #06C1AE; }
+
+.list {
+  height: 1.55rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /*换行*/
+  background: #fff; }
+  .list li {
+    height: 0.65rem;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* 竖向排列 */ }
+    .list li img {
+      height: 0.32rem;
+      width: 0.32rem;
+      background: #FAAD0F;
+      font-size: .18rem;
+      color: #fff;
+      text-align: center;
+      line-height: .32rem;
+      border-radius: .06rem; }
+    .list li span {
+      line-height: 2; }
+
+.list2 {
+  height: 1.5rem;
+  width: 100%;
+  background: #fff;
+  margin-top: .1rem;
+  display: flex;
+  padding: .1rem 0; }
+  .list2 .part {
+    height: 1.3rem;
+    width: 33.3%;
+    padding: 0 .1rem;
+    border-right: 1px solid #ccc; }
+    .list2 .part h4 {
+      font-size: .18rem;
+      padding-left: .02rem;
+      line-height: .32rem;
+      font-weight: 800; }
+    .list2 .part p {
+      color: #ccc; }
+    .list2 .part:nth-child(1) h4 {
+      color: #5CA719; }
+    .list2 .part:nth-child(2) h4 {
+      color: #FF6A44; }
+    .list2 .part:nth-child(3) {
+      border: none; }
+      .list2 .part:nth-child(3) h4 {
+        color: #FBA1D0; }
+
+.list3 {
+  height: auto;
+  width: 100%;
+  padding: 0 .12rem;
+  background: #fff;
+  margin-top: .1rem; }
+  .list3 h3 {
+    height: 0.4rem;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    line-height: .4rem;
+    font-size: .22rem; }
+  .list3 dl {
+    height: 1rem;
+    width: 100%;
+    background: #fff;
+    padding: .05rem .1rem .1rem;
+    display: flex;
+    box-shadow: 0 1px 1px #D9D9D9; }
+    .list3 dl dt {
+      padding-right: .1rem; }
+      .list3 dl dt img {
+        height: auto;
+        width: 0.9rem; }
+    .list3 dl dd {
+      padding-left: .1rem;
+      padding-top: .05rem;
+      height: auto;
+      width: 80%;
+      border-left: 1px solid #D9D9D9; }
+      .list3 dl dd h4 {
+        font-size: .2rem; }
+      .list3 dl dd .di {
+        color: #787878;
+        line-height: .2rem; }
+      .list3 dl dd .mon {
+        margin-top: .03rem;
+        color: #787878; }
+        .list3 dl dd .mon span {
+          color: #06C1AE;
+          font-size: .16rem; }
+          .list3 dl dd .mon span b {
+            color: #06C1AE;
+            font-weight: 800;
+            font-size: .2rem; }
+
+/*# sourceMappingURL=style.css.map */

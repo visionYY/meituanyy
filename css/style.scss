@@ -1,0 +1,241 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: .14rem;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "楷体";
+  text-size-adjust: 100%; }
+
+ul, li {
+  list-style: none; }
+
+html {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  font-size: 625%; }
+
+img, div, body, html, ul, li, a {
+  -webkit-touch-callout: none; }
+
+input, button {
+  outline: 0; }
+
+button {
+  cursor: pointer; }
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #ccc; }
+input{-webkit-appearance:none;}
+
+@mixin num($w,$h){
+  height:$h;
+  width:$w;
+}
+
+html,body,.wrap{
+  @include num(100%,100%);
+}
+
+.wrap{
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+  background:#F0EFED;
+}
+
+header{
+  @include num(100%,.5rem);
+  background:#06C1AE;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0 .12rem;
+  a{
+    color:#fff;
+    font-size:.18rem;
+    &:nth-child(1){
+      i.icon{
+        font-size:.14rem;
+      }
+    }
+    &:nth-child(2){
+      flex:1;
+      margin:0 .12rem;
+      position:relative;
+      input{
+        @include num(100%,.32rem);
+        border:none;
+        border-radius:.02rem;
+        padding-left:.27rem;
+        background:#05A494;
+        padding-left:.2rem;
+        &::-webkit-input-placeholder{
+          color:#54D0C2;
+        }
+      }
+      i.icon{
+        position:absolute;
+        top:.06rem;
+        left:.03rem;
+        color:#fff;
+        font-size:.16rem;
+      }
+    }
+    &:nth-child(3){
+      flex-basis:.4rem;
+      text-align:center;
+      font-size:.16rem;
+      i.icon{
+        display:block;
+        font-size:.2rem;
+      }
+    }
+  }
+}
+
+section{
+  flex:1;
+  overflow-y:scroll;
+}
+
+.banner{
+  width:100%;
+  img{
+    width:100%;
+    height:auto;
+  }
+}
+
+.text{
+  width:100%;
+  overflow:hidden;
+  position:relative;
+  img{
+    width:100%;
+    height:auto;
+  }
+  .swiper-pagination-bullet-active{
+    background:#06C1AE;
+  }
+}
+
+.list{
+  @include num(100%,1.55rem);
+  display:flex;
+  flex-wrap:wrap;/*换行*/
+  background:#fff;
+  li{
+    @include num(20%,.65rem);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;/* 竖向排列 */
+    img{
+      @include num(.32rem,.32rem);
+      background:#FAAD0F;
+      font-size:.18rem;
+      color:#fff;
+      text-align:center;
+      line-height:.32rem;
+      border-radius:.06rem;
+    }
+    span{
+      line-height:2;
+    }
+  }
+}
+
+.list2{
+  @include num(100%,1.5rem);
+  background:#fff;
+  margin-top:.1rem;
+  display:flex;
+  padding:.1rem 0;
+  .part{
+    @include num(33.3%,1.3rem);
+    padding:0 .1rem;
+    border-right:1px solid #ccc;
+    h4{
+      font-size:.18rem;
+      padding-left:.02rem;
+      line-height:.32rem;
+      font-weight:800;
+    }
+    p{
+      color:#ccc;
+    }
+    &:nth-child(1){
+      h4{
+        color:#5CA719;
+      }
+    }
+    &:nth-child(2){
+      h4{
+        color:#FF6A44;
+      }
+    }
+    &:nth-child(3){
+      border:none;
+      h4{
+        color:#FBA1D0;
+      }
+    }
+  }
+}
+
+.list3{
+  @include num(100%,auto);
+  padding:0 .12rem;
+  background: #fff;
+  margin-top:.1rem;
+  h3{
+    @include num(100%,.4rem);
+    border-bottom: 1px solid #ccc;
+    line-height:.4rem;
+    font-size:.22rem;
+  }
+  dl{
+    @include num(100%,1rem);
+    background:#fff;
+    padding:.05rem .1rem .1rem;
+    display:flex;
+    box-shadow:0 1px 1px #D9D9D9;
+    dt{
+      padding-right:.1rem;
+      img{
+        @include num(.9rem,auto);
+      }
+    }
+    dd{
+      padding-left:.1rem;
+      padding-top:.05rem;
+      @include num(80%,auto);
+      border-left:1px solid #D9D9D9;
+      h4{
+        font-size:.2rem;
+      }
+      .di{
+        color:#787878;
+        line-height:.2rem;
+      }
+      .mon{
+        margin-top:.03rem;
+        color:#787878;
+        span{
+          color:#06C1AE;
+          font-size:.16rem;
+          b{
+            color:#06C1AE;
+            font-weight:800;
+            font-size:.2rem;
+          }
+        }
+      }
+    }
+  }
+}
